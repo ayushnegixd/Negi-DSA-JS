@@ -5,6 +5,11 @@ Welcome to my **Complete DSA Repository**! This project contains my solutions to
 
 My goal is to master every aspect of Data Structures and Algorithms to become a top-tier Backend Developer.
 
+### 💡 Inside Each File
+Every solution file includes:
+1. **The Solution** (Optimized Approach)
+2. **Alternative Approaches** (Brute force vs. Optimal)
+
 ---
 
 ## 📂 Comprehensive Syllabus
