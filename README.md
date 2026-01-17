@@ -1,5 +1,5 @@
 # Negi-DSA-JS
-# 🚀 Data Structures & Algorithms (Striver's A2Z Sheet)
+# 🚀 Data Structures & Algorithms
 
 Welcome to my **Complete DSA Repository**! This project contains my solutions to the entire **Striver's A2Z DSA Sheet**, implemented purely in **JavaScript**.
 
