@@ -94,7 +94,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 ---
 
 ## 🛠️ Tech Stack
-- **Language:** JavaScript (Node.js)
+- **Language:** JavaScript (ES6+)
 - **Concepts:** Time Complexity (Big O), Space Complexity
 
 ---
@@ -104,5 +104,5 @@ Clone the repo and run any file using vs code.
 
 ## 📬 Connect
 
-Name: Ayush Negi
-Focus: Backend Development(node.js) & DSA Mastery
+**Name:** Ayush Negi
+**Focus:** Backend Development(node.js) & DSA Mastery
