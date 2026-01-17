@@ -103,6 +103,6 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 Clone the repo and run any file using vs code.
 
 ## 📬 Connect
-
-**Name:** Ayush Negi
-**Focus:** Backend Development(node.js) & DSA Mastery
+- **Name:** Ayush (Negi)
+- **Focus:** Backend Development (Node.js) & DSA Mastery
+- **LinkedIn:** [Ayush Negi](https://www.linkedin.com/in/ayushnegixd)
