@@ -20,8 +20,8 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] **Things to Know** (JS Logic, Input/Output)
 - [x] **Build Logic** (Patterns, Loops)
 - [x] **Basic Maths** (Count Digits, Reverse, Palindrome, GCD, Armstrong)
-- [ ] **Recursion** (Basic)
-- [ ] **Hashing** (Basic)
+- [x] **Recursion** (Basic)
+- [x] **Hashing** (Basic)
 
 ### **Step 2: Sorting Techniques**
 - [ ] Selection, Bubble, Insertion Sort
