@@ -4,17 +4,17 @@
 
 
 class Solution {
-    bubbleSort(nums) {
-        let n = nums.length;
-        for (let i = 0; i < n; i++) {
-            for (let j = 0; j < n-1-i; j++){
-                if (nums[j] > nums[j+1]) {
-                    let temp = nums[j];
-                    nums[j] = nums [j+1];
-                    nums[j+1] = temp;
-                }
-            }
+  bubbleSort(nums) {
+    let n = nums.length;
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n-1-i; j++){
+        if (nums[j] > nums[j+1]) {
+            let temp = nums[j];
+            nums[j] = nums [j+1];
+            nums[j+1] = temp;
+          }
         }
-        return nums;
-    }
+      }
+    return nums;
+  }
 };
