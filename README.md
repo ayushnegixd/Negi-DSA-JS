@@ -24,8 +24,8 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] **Hashing** (Basic)
 
 ### **Step 2: Sorting Techniques**
-- [ ] Selection, Bubble, Insertion Sort
-- [ ] Merge Sort
+- [x] Selection, Bubble, Insertion Sort
+- [x] Merge Sort
 - [ ] Quick Sort
 
 ### **Step 3: Arrays**
