@@ -26,7 +26,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 ### **Step 2: Sorting Techniques**
 - [x] Selection, Bubble, Insertion Sort
 - [x] Merge Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 
 ### **Step 3: Arrays**
 - [ ] **Easy:** Largest Element, Rotate Array, Move Zeros
