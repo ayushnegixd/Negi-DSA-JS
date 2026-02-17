@@ -29,7 +29,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Quick Sort
 
 ### **Step 3: Arrays**
-- [ ] **Easy:** Largest Element, Rotate Array, Move Zeros
+- [x] **Easy:** Largest Element, Rotate Array, Move Zeros
 - [ ] **Medium:** Two Sum, Sort 0s 1s 2s, Kadane's Algorithm
 - [ ] **Hard:** Pascal's Triangle, 3-Sum, 4-Sum, Merge Intervals
 
