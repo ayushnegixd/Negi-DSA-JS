@@ -29,6 +29,7 @@ var rearrangeArray = function(nums) {
     return ans;
 };
 
+
 // optimal approach(two pointer approach)
 // Time Complexity: O(n)
 // Space Complexity: O(n)
