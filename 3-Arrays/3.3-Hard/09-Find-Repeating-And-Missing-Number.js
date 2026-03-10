@@ -45,7 +45,7 @@ var findErrorNums = function(nums) {
     return [A, B];
 };
 
-// optimal approach(using math)
+// optimal approach-1(using math)
 // time complexity: O(n)
 // space complexity: O(1)
 var findErrorNums = function(nums) {
@@ -62,5 +62,30 @@ var findErrorNums = function(nums) {
     val2 = val2 / val1;
     let x = (val1 + val2) / 2;
     let y = x - val1;
+    return [x, y];
+};
+
+// optimal approach-2(using bit manipulation)
+// time complexity: O(n)
+// space complexity: O(1)
+var findErrorNums = function(nums) {
+    let n = nums.length;
+    let xor = 0;
+    for (let i = 0; i < n; i++) {
+        xor ^= nums[i];
+        xor ^= (i + 1);
+    }
+    let setBit = xor & -xor;
+    let x = 0, y = 0;
+    for (let i = 0; i < n; i++) {
+        if (nums[i] & setBit) x ^= nums[i];
+        else y ^= nums[i];
+        if ((i + 1) & setBit) x ^= (i + 1);
+        else y ^= (i + 1);
+        let count = 0;
+        for (let num of nums) {
+            if (num === x) count++;
+        }
+    }
     return [x, y];
 };
