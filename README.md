@@ -31,7 +31,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 ### **Step 3: Arrays**
 - [x] **Easy:** Largest Element, Rotate Array, Move Zeros
 - [x] **Medium:** Two Sum, Sort 0s 1s 2s, Kadane's Algorithm
-- [ ] **Hard:** Pascal's Triangle, 3-Sum, 4-Sum, Merge Intervals
+- [x] **Hard:** Pascal's Triangle, 3-Sum, 4-Sum, Merge Intervals
 
 ### **Step 4: Binary Search**
 - [ ] BS on 1D Arrays
