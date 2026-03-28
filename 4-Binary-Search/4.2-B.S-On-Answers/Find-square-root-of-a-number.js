@@ -16,23 +16,19 @@ function floorSqrt(n) {
 // time complexity: O(log n)
 // space complexity: O(1)
 
-function floorSqrt(n) {
-    if (n === 0 || n === 1) return n;
+  function floorSqrt(n) {
+      if (n === 0 || n === 1) return n;
     let low = 1;
     let high = n;
-    let ans = 0;
     while (low <= high) {
-        let mid = (low + high) >>> 1;
-        if (mid * mid === n) {
-            return mid;
-        }
-        if (mid * mid < n) {
+        let mid = Math.floor((low + high) / 2);
+        let val = mid * mid;
+        if (val <= n) {
             low = mid + 1;
-            ans = mid;
         }
         else {
             high = mid - 1;
         }
     }
-    return ans;
+    return high;
 };
