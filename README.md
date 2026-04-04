@@ -34,7 +34,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] **Hard:** Pascal's Triangle, 3-Sum, 4-Sum, Merge Intervals
 
 ### **Step 4: Binary Search**
-- [ ] BS on 1D Arrays
+- [x] BS on 1D Arrays
 - [ ] BS on Answers (Min/Max problems)
 - [ ] BS on 2D Arrays
 
