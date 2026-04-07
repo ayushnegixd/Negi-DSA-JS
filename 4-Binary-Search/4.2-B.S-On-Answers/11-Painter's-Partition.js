@@ -10,63 +10,56 @@
 // time complexity: O(n * (sum - max))
 // space complexity: O(1)
 function paint(A, B, C) {
-    const n = C.length;
-    const maxBoard = Math.max(...C);
-    const totalLength = C.reduce((sum, length) => sum + length, 0);
-    let low = maxBoard;
-    let high = totalLength;
-    
-    while (low < high) {
-        const mid = Math.floor((low + high) / 2);
-        let paintersRequired = 1;
-        let currentLength = 0;
-        for (let i = 0; i < n; i++) {
-            if (currentLength + C[i] > mid) {
-                paintersRequired++;
+    function countPainters(maxLength) {
+        let painters = 1, currentLength = 0;
+        for (let i = 0; i < C.length; i++) {
+            if (currentLength + C[i] > maxLength) {
+                painters++;
                 currentLength = C[i];
             } else {
                 currentLength += C[i];
             }
         }
-        if (paintersRequired > A) {
-            low = mid + 1;
-        } else {
-            high = mid;
+        return painters;
+    }
+
+    const maxBoard = Math.max(...C);
+    const totalLength = C.reduce((sum, len) => sum + len, 0);
+    for (let time = maxBoard; time <= totalLength; time++) {
+        if (countPainters(time) <= A) {
+            return (time * B) % 10000003;
         }
-    } 
-    return (low * B) % 10000003;
+    }
 };
 
 // optimal solution
 // time complexity: O(n log (sum - max))
 // space complexity: O(1)
 function paint(A, B, C) {
-  function countPainters(C, maxLength) {
-    let painters = 1;
-    let currentLength = 0;
-    for (let i = 0; i < C.length; i++) {
-      if (currentLength + C[i] > maxLength) {
-        painters++;
-        currentLength = C[i];
-      } else {
-        currentLength += C[i];
-      }
+    function countPainters(maxLength) {
+        let painters = 1;
+        let currentLength = 0n; // Use BigInt for lengths too
+        for (let i = 0; i < C.length; i++) {
+            let boardLen = BigInt(C[i]);
+            if (currentLength + boardLen > maxLength) {
+                painters++;
+                currentLength = boardLen;
+            } else {
+                currentLength += boardLen;
+            }
+        }
+        return painters;
     }
-    return painters;
-  }
 
-  const maxBoard = Math.max(...C);
-  const totalLength = C.reduce((sum, length) => sum + length, 0);
-  let low = maxBoard;
-  let high = totalLength;
-  while (low < high) {
-    const mid = Math.floor((low + high) / 2);
-    const paintersRequired = countPainters(C, mid);
-    if (paintersRequired > A) {
-      low = mid + 1;
-    } else {
-      high = mid;
+    let low = BigInt(Math.max(...C));
+    let high = C.reduce((sum, length) => sum + BigInt(length), 0n);
+    while (low < high) {
+        const mid = (low + high) / 2n;
+        if (countPainters(mid) > A) {
+            low = mid + 1n;
+        } else {
+            high = mid;
+        }
     }
-  }
-  return (low * B) % 10000003;
-};
+    return Number((low * BigInt(B)) % 10000003n);
+}
