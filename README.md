@@ -35,7 +35,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 
 ### **Step 4: Binary Search**
 - [x] BS on 1D Arrays
-- [ ] BS on Answers (Min/Max problems)
+- [x] BS on Answers (Min/Max problems)
 - [ ] BS on 2D Arrays
 
 ### **Step 5: Strings (Basic & Medium)**
