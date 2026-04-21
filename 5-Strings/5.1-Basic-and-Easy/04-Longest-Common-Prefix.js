@@ -2,24 +2,7 @@
 // If there is no common prefix, return an empty string "".
 
 
-// brute force solution
-// time complexity: O(n * m) where n is the number of strings and m is the length of the longest string
-// space complexity: O(1)
-
-function longestCommonPrefix(strs) {
-    if (strs.length === 0) return "";
-    let prefix = strs[0];
-    for (let i = 1; i < strs.length; i++) {
-        while (strs[i].indexOf(prefix) !== 0) {
-            prefix = prefix.slice(0, -1);
-            if (prefix === "") return "";
-        }
-    }
-    return prefix;
-};
-
-
-// optimal solution
+// brute force solution with sorting
 // time complexity: O(N * MlogN) where N is the number of strings and M is the length of the longest string
 // space complexity: O(1)
 
@@ -33,4 +16,21 @@ function longestCommonPrefix(strs) {
         i++;
     }
     return first.slice(0, i);
+};
+
+
+// optimal solution
+// time complexity: O(n * m) where n is the number of strings and m is the length of the longest string
+// space complexity: O(1)
+
+function longestCommonPrefix(strs) {
+    if (strs.length === 0) return "";
+    let prefix = strs[0];
+    for (let i = 1; i < strs.length; i++) {
+        while (strs[i].indexOf(prefix) !== 0) {
+            prefix = prefix.slice(0, -1);
+            if (prefix === "") return "";
+        }
+    }
+    return prefix;
 };
