@@ -29,12 +29,12 @@ function isIsomorphicOptimal(s, t) {
         let original = s[i];
         let replacement = t[i];
         if (map.has(original)) {
+            if (map.get(original) !== replacement) return false;
+        } else {
             if (seenValues.has(replacement)) return false;
             map.set(original, replacement);
             seenValues.add(replacement);
-        } else {
-            if (map.get(original) !== replacement) return false;
         }
     }
     return true;
-};  
+};
