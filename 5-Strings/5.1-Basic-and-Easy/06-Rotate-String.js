@@ -17,7 +17,7 @@ function rotateStringBrute(s, goal) {
 
 // optimal solution
 // time complexity: O(n)
-// space complexity: O(1)
+// space complexity: O(n)
 function rotateStringOptimal(s, goal) {
     if (s.length !== goal.length) return false;
     return (s + s).includes(goal);
