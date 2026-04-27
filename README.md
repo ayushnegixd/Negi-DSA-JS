@@ -39,7 +39,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] BS on 2D Arrays
 
 ### **Step 5: Strings (Basic & Medium)**
-- [ ] Remove Outermost Parenthesis
+- [x] Remove Outermost Parenthesis
 - [ ] Reverse Words in a String
 - [ ] Longest Common Prefix
 - [ ] Isomorphic Strings
