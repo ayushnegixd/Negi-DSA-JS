@@ -40,7 +40,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 
 ### **Step 5: Strings (Basic & Medium)**
 - [x] Remove Outermost Parenthesis
-- [ ] Reverse Words in a String
+- [x] Reverse Words in a String
 - [ ] Longest Common Prefix
 - [ ] Isomorphic Strings
 
