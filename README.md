@@ -42,7 +42,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Remove Outermost Parenthesis
 - [x] Reverse Words in a String
 - [x] Longest Common Prefix
-- [ ] Isomorphic Strings
+- [x] Isomorphic Strings
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
