@@ -39,27 +39,29 @@ function countKDistinctSlidingWindow(s, k) {
     return count;
 };
 
-// optimal solution using sliding window and two pointers
+// optimal solution using sliding window math
 // time complexity: O(n)
-// space complexity: O(n)
+// space complexity: O(1) (since map size is at most 26 for lowercase English letters)
 function countKDistinctOptimal(s, k) {
-    let count = 0;
-    const charCount = new Map();
-    let left = 0;
-    for (let right = 0; right < s.length; right++) {
-        const char = s[right];
-        charCount.set(char, (charCount.get(char) || 0) + 1);
-        while (charCount.size > k) {
-            const leftChar = s[left];
-            charCount.set(leftChar, charCount.get(leftChar) - 1);
-            if (charCount.get(leftChar) === 0) {
-                charCount.delete(leftChar);
+    function atMostK(s, k) {
+        if (k === 0) return 0;
+        let count = 0;
+        let left = 0;
+        const charCount = new Map();
+        for (let right = 0; right < s.length; right++) {
+            const char = s[right];
+            charCount.set(char, (charCount.get(char) || 0) + 1);
+            while (charCount.size > k) {
+                const leftChar = s[left];
+                charCount.set(leftChar, charCount.get(leftChar) - 1);
+                if (charCount.get(leftChar) === 0) {
+                    charCount.delete(leftChar);
+                }
+                left++;
             }
-            left++;
-        }
-        if (charCount.size === k) {
             count += right - left + 1;
         }
+        return count;
     }
-    return count;
+  return atMostK(s, k) - atMostK(s, k - 1);
 };
