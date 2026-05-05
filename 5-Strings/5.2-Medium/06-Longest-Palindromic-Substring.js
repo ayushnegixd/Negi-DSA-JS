@@ -35,12 +35,10 @@ function isPalindrome(str) {
 function longestPalindromeExpand(s) {
     let longest = '';
     for (let i = 0; i < s.length; i++) {
-        // Odd length palindromes
         const oddPalindrome = expandAroundCenter(s, i, i);
         if (oddPalindrome.length > longest.length) {
             longest = oddPalindrome;
         }
-        // Even length palindromes
         const evenPalindrome = expandAroundCenter(s, i, i + 1);
         if (evenPalindrome.length > longest.length) {
             longest = evenPalindrome;
