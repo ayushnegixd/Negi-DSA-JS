@@ -61,7 +61,8 @@ function expandAroundCenter(s, left, right) {
 // time complexity: O(n)
 // space complexity: O(n)
 function longestPalindromeOptimal(s) {
-   let T = "^#" + s.split("").join("#") + "#";
+    if (s.length <= 1) return s;
+    let T = "^#" + s.split("").join("#") + "#$";
     let n = T.length;
     let P = new Array(n).fill(0);
     let C = 0, R = 0;
@@ -83,5 +84,6 @@ function longestPalindromeOptimal(s) {
             centerIndex = i;
         }
     }
-    return s.substring((centerIndex - maxLen) / 2, (centerIndex + maxLen) / 2);
+    const start = Math.floor((centerIndex - maxLen) / 2);
+    return s.substring(start, start + maxLen);
 };
