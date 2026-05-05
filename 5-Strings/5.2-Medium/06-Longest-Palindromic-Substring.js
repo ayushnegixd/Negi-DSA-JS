@@ -57,7 +57,7 @@ function expandAroundCenter(s, left, right) {
     return s.substring(left + 1, right);
 };
 
-// optimal solution using dynamic programming
+// optimal solution using Manacher's Algorithm
 // time complexity: O(n)
 // space complexity: O(n)
 function longestPalindromeOptimal(s) {
