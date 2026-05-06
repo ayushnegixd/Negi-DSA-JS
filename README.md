@@ -43,6 +43,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Reverse Words in a String
 - [x] Longest Common Prefix
 - [x] Isomorphic Strings
+- [x] Rotate Strings
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
