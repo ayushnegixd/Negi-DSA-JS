@@ -45,6 +45,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Isomorphic Strings
 - [x] Rotate Strings
 - [x] Valid Anagram
+- [x] Sort Characters By Frequency
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
