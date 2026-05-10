@@ -47,6 +47,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Valid Anagram
 - [x] Sort Characters By Frequency
 - [x] Maximum Nesting Depth of the Parentheses
+- [x] Roman To Integer
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
