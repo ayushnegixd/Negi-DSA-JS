@@ -49,6 +49,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Maximum Nesting Depth of the Parentheses
 - [x] Roman To Integer
 - [x] String to Integer (atoi)
+- [x] Count Number of Substrings
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
