@@ -52,6 +52,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Count Number of Substrings
 - [x] Longest Palindromic Substring
 - [x] Sum of Beauty of All Substrings
+- [x] Reverse Words In A String
 
 ### **Step 6: Linked Lists (LL)**
 - [ ] Singly LL & Doubly LL
