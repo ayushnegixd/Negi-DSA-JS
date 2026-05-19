@@ -55,7 +55,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Reverse Words In A String
 
 ### **Step 6: Linked Lists (LL)**
-- [ ] Singly LL & Doubly LL
+- [x] Singly LL & Doubly LL
 - [ ] Medium Problems (Reverse, Loop detection)
 - [ ] Hard Problems (Flattening, Cloning)
 
