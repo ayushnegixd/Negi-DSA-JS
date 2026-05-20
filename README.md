@@ -54,7 +54,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Sum of Beauty of All Substrings
 - [x] Reverse Words In A String
 
-### **Step 6: Linked Lists (LL)**
+### **Step 6: Linked List (LL)**
 - [x] Singly LL & Doubly LL
 - [ ] Medium Problems (Reverse, Loop detection)
 - [ ] Hard Problems (Flattening, Cloning)
