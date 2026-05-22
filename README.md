@@ -50,7 +50,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 - [x] Roman To Integer
 - [x] String to Integer (atoi)
 - [x] Count Number of Substrings
-- [x] Longest Palindromic Substring
+- [x] Longest Palindromic Substrings
 - [x] Sum of Beauty of All Substring
 - [x] Reverse Words In A String
 
