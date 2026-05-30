@@ -36,7 +36,7 @@ This repository covers the complete A2Z roadmap. Below is my progress tracker th
 ### **Step 4: Binary Search**
 - [x] BS on 1D Arrays
 - [x] BS on Answers (Min/Max problems)
-- [x] BS on 2D Arrays
+- [x] BS on 2D Array
 
 ### **Step 5: Strings (Basic & Medium)**
 - [x] Remove Outermost Parenthesis
